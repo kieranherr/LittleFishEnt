@@ -13,7 +13,7 @@ namespace LittleFishEnt.Data
             : base(options)
         {
         }
-        public DbSet<LittleFishEnt.Models.Bios> Bios { get; set; }
-        public DbSet<LittleFishEnt.Models.Images> Images { get; set; }
+        public DbSet<Bios> Bios { get; set; }
+        public DbSet<Images> Images { get; set; }
     }
 }
