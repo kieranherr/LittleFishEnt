@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using LittleFishEnt.Models;
 
 namespace LittleFishEnt.Data
 {
@@ -12,5 +13,7 @@ namespace LittleFishEnt.Data
             : base(options)
         {
         }
+        public DbSet<LittleFishEnt.Models.Bios> Bios { get; set; }
+        public DbSet<LittleFishEnt.Models.Images> Images { get; set; }
     }
 }
